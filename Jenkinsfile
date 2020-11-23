@@ -13,13 +13,6 @@ pipeline {
 			}
 		}
 	}
-	stage("Quality Gate") {
-            steps {
-              timeout(time: 2, unit: 'MINUTES') {
-                waitForQualityGate abortPipeline: true
-              }
-            }
-          }
 	stage ('Deploy') {
 		steps {
 			sh '/opt/maven/apache-maven-3.6.3/bin/mvn clean deploy -Dmaven.test.skip=true'
