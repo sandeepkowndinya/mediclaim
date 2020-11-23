@@ -76,19 +76,19 @@
 		</dependency>
 	</dependencies>
 	<scm>
-        <connection>scm:https://github.com/baikunthar/mediclaim.git</connection>
-        <url>https://github.com/baikunthar/mediclaim.git</url>
-        <developerConnection>scm:git:https://github.com/baikunthar/mediclaim.git</developerConnection>
+        <connection>scm:https://github.com/sandeepkowndinya/mediclaim.git</connection>
+        <url>https://github.com/sandeepkowndinya/mediclaim.git</url>
+        <developerConnection>scm:git:https://github.com/sandeepkowndinya/mediclaim.git</developerConnection>
       <tag>HEAD</tag>
       </scm>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus</id>
-			<url>http://13.127.41.17:8081/nexus/content/repositories/snapshots</url>
+			<url>http://65.0.85.94:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
              <id>nexus</id>
-             <url>http://13.127.88.103:8081/nexus/content/repositories/releases</url>
+             <url>http://65.0.85.94:8081/nexus/content/repositories/releases</url>
        	     </repository>
 	</distributionManagement>
 	<build>
