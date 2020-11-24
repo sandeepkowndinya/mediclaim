@@ -84,11 +84,11 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<id>nexus</id>
-			<url>http://65.0.85.94:8081/nexus/content/repositories/snapshots</url>
+			<url>http://13.127.130.242:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 		<repository>
              <id>nexus</id>
-             <url>http://65.0.85.94:8081/nexus/content/repositories/releases</url>
+             <url>http://13.127.130.242:8081/nexus/content/repositories/releases</url>
        	     </repository>
 	</distributionManagement>
 	<build>
@@ -121,7 +121,7 @@
         		    <artifactId>flyway-maven-plugin</artifactId>
 			    <version>6.4.4</version>
 			    <configuration>
-                              <url>jdbc:mysql://13.127.88.103:3306</url>
+                              <url>jdbc:mysql://13.127.130.242:3306</url>
                               <user>claimuser1</user>
 		              <password>H@ckath0n</password>
 			      <schemas>
@@ -134,7 +134,7 @@
 		<artifactId>maven-release-plugin</artifactId>
 		<version>3.0.0-M1</version>
                 <configuration>
-		    <tagBase>https://github.com/baikunthar/mediclaim.git/tag</tagBase>
+		    <tagBase>https://github.com/sandeepkowndinya/mediclaim.git/tag</tagBase>
                      <releaseProfiles>release</releaseProfiles>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
