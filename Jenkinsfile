@@ -6,7 +6,7 @@ pipeline {
             git 'git@github.com:sandeepkowndinya/mediclaim.git'
 		}
 	}
-	stage('Build') {
+	stage('Build with sonar') {
 		steps {
 			withSonarQubeEnv('sonar') {
 				sh '/opt/maven/apache-maven-3.6.3/bin/mvn clean verify sonar:sonar -Dmaven.test.skip=true'
