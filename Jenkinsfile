@@ -1,7 +1,7 @@
 pipeline {
    agent any
 	stages {
-      stage('Git Checkout') {
+      stage('Git Checkout-mediclaim') {
          steps {
             git 'git@github.com:sandeepkowndinya/mediclaim.git'
 		}
